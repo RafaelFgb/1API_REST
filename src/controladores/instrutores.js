@@ -1,7 +1,6 @@
 let { instrutores } = require('../bancodedados');
 let { identificadorInstrutor } = require('../bancodedados');
 
-
 const listarInstrutores = (req, res) => {
     return res.json(instrutores);
 }
@@ -105,11 +104,12 @@ const excluirInstrutor = (req, res) => {
     return res.status(204).send();
 }
 
+
 module.exports = {
     listarInstrutores,
     obterInstrutor,
     cadastrarInstrutor,
     editarInstrutor,
     atualizarStatusInstrutor,
-    excluirInstrutor
+    excluirInstrutor,
 }
